@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+
+/* com essa estrutura eu retiro a margem padrão que o navegador coloca*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* comm essa estrutura na primeira propriedade, 
+* eu defino que eu quero que meu contaúdo ocupe 100% da página ou view height; 
+* o meu boddy tenha uma borda ao redor do conteúdo em formato caixa
+* defino cor de funfo
+* defino cor da fonte*/
+
+
+body {
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: #000000;
+    color: #F6F6F6;
+}
+
+
+.titulo-destaque {
+    color: #22D4FD;
+}
+
+
+/* sobre a utilização do flex-box, ele ajuda a posicionar os elementos de maneira flexível:
+* display: flex;
+justify-contetx: escolho a propriedade desejada
+*/
+
+.apresentacao {
+    margin: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.apresentacao__conteudo {
+    width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.apresentacao__conteudo__titulo {
+    font-size: 36px;
+    font-family: 'Krona One', sans-serif;
+    text-align: justify;
+}
+
+.apresentacao__conteudo__texto {
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: justify;
+
+}
+
+
+.apresentacao__links {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.apresentacao__links__link {
+    background-color: #22D4FD;
+    font-weight: 600;
+    width: 280px;
+    text-align: center;
+    border-radius: 16px;
+    font-size: 24px;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: #000000;
+    font-family: 'Montserrat', sans-serif;
+
+}
