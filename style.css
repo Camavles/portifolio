@@ -14,8 +14,9 @@
 * defino cor da fonte*/
 
 
+
 body {
-    height: 100vh;
+   /* height: 100vh; */
     box-sizing: border-box;
     background-color: #000000;
     color: #F6F6F6;
@@ -33,7 +34,7 @@ justify-contetx: escolho a propriedade desejada
 */
 
 .apresentacao {
-    margin: 10%;
+    padding: 10%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -62,20 +63,49 @@ justify-contetx: escolho a propriedade desejada
 
 .apresentacao__links {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
+    align-items: center;
+    gap: 32px;
 }
 
 
+.apresentacao__links__subtitulo {
+    font-family: 'Krona One', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+}
+
 .apresentacao__links__link {
-    background-color: #22D4FD;
+   /* background-color: #22D4FD; */
+   /* o primeiro valor da borda é a espessura da borda, depois vem o tracejado e depois a cor*/
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    border: 2px solid #22D4FD;
     font-weight: 600;
-    width: 280px;
+    width: 378px;
     text-align: center;
-    border-radius: 16px;
+    border-radius: 8px;
     font-size: 24px;
     padding: 21.5px 0;
     text-decoration: none;
-    color: #000000;
+    color: #F6F6F6;
     font-family: 'Montserrat', sans-serif;
+}
+
+.apresentacao__links__link:hover {
+    background-color: #272727;
+    font-size: 26px;
+}
+
+.rodape {
+    color: #000000;
+    background-color: #22D4FD;
+    padding: 24px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
 
 }
