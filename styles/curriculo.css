@@ -7,6 +7,11 @@
 }
 
 
+.apresentacao {
+    background: #F6F1F1;
+}
+
+
 .conteudo {
     box-sizing: border-box;
     display: flex;
@@ -24,10 +29,10 @@
 
 }
 
-
-
-
 .conteudo__sessoes__titulos {
     text-transform: uppercase;
 }
 
+.divisoes {
+    margin: 10px 0px 10px 0px;
+}
